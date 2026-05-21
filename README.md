@@ -1,4 +1,4 @@
-# 🔒 OT Anomaly Detector
+#  OT Anomaly Detector
 
 Unsupervised anomaly detection for **OT/IoT network traffic** using a PyTorch Autoencoder.
 
@@ -7,7 +7,7 @@ Designed to detect network-level threats in industrial environments:
 
 ---
 
-## 📌 Why an Autoencoder?
+##  Why an Autoencoder?
 
 In OT/ICS environments, labelled attack data is scarce. An autoencoder is trained **only on normal traffic** — it learns to reconstruct healthy patterns. When anomalous traffic arrives, the reconstruction error spikes, triggering an alert.
 
@@ -18,7 +18,7 @@ Anomalous traffic →  high reconstruction error → ⚠ ANOMALY
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Input (8 features)
@@ -44,7 +44,7 @@ Loss function: **MSE** between input and reconstruction.
 
 ---
 
-## 📊 Features Used
+##  Features Used
 
 | Feature | Description |
 |---|---|
@@ -59,7 +59,7 @@ Loss function: **MSE** between input and reconstruction.
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install dependencies
 
@@ -109,7 +109,7 @@ python detect.py --file data/test.csv --output results/predictions.csv
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ot-anomaly-detector/
@@ -130,7 +130,7 @@ ot-anomaly-detector/
 
 ---
 
-## 📈 Expected Results
+##  Expected Results
 
 With default hyperparameters on the synthetic dataset:
 
@@ -145,7 +145,7 @@ With default hyperparameters on the synthetic dataset:
 
 ---
 
-## 🧪 Anomaly Types Simulated
+##  Anomaly Types Simulated
 
 | Attack | Signature in features |
 |---|---|
@@ -155,7 +155,7 @@ With default hyperparameters on the synthetic dataset:
 
 ---
 
-## 🔧 Customisation
+##  Customisation
 
 **Use your own traffic data:**  
 Replace `data/train.csv` / `data/test.csv` with real captures. Ensure your CSV has the 8 feature columns listed above plus a `label` column (0=normal, 1=anomaly). Then re-run `train.py`.
@@ -171,7 +171,7 @@ Edit `model/autoencoder.py` — change `latent_dim` (default 4) or add more laye
 
 ---
 
-## 📚 Background Reading
+##  Background Reading
 
 - [Anomaly Detection in Industrial Control Systems](https://www.cisa.gov/ics)
 - [Autoencoder-based anomaly detection survey](https://arxiv.org/abs/2101.03938)
@@ -179,13 +179,13 @@ Edit `model/autoencoder.py` — change `latent_dim` (default 4) or add more laye
 
 ---
 
-## 📝 License
+##  License
 
 MIT — free to use, modify, and redistribute.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests welcome! Ideas for improvement:
 - Add LSTM autoencoder for temporal sequences
