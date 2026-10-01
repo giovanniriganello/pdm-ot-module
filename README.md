@@ -203,9 +203,7 @@ Per adattare il modulo al tuo impianto crea un nuovo file JSON in config/:
 
 ## Autore
 
-Giovanni — Studente ITS Academy Energia e Reti, Leonforte (EN)
-Percorso: Tecnologie Applicate — EQF Level 5
-Azienda partner: Sielte SpA
+Giovanni — Studente ITS Academy Energia e tecnologia
 
-Progetto sviluppato nell'ambito di una tesi su sistemi OT/IT sicuri
+Progetto sviluppato nell'ambito di sistemi OT/IT sicuri
 per impianti CSP con modulo di Predictive Maintenance basato su ML.
